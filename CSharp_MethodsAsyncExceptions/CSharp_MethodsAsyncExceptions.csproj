@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TypeParameter_Ref_vs_Out.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,8 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="method_advance.cs" />
+    <Compile Include="method_revision.cs" />
+    <Compile Include="Method_ShortCuteWay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type_of_Param\Ref_Type_param\Out_Type param.cs" />
+    <Compile Include="Type_of_Param\Ref_Type_param\Ref_Type param.cs" />
+    <Compile Include="Type_of_Param\Ref_Type_param\In_Type param.cs" />
+    <Compile Include="Type_of_Param\Ref_Type_param\Ref_vs_Out.cs" />
+    <Compile Include="Type_of_Param\Value_Type_Parameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
